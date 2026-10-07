@@ -1,0 +1,106 @@
+ .gitignore                              |   6 [32m++[m
+ add_real_chars_multi.py                 | 112 [32m++++++++++++++++++++++[m
+ batch_test.py                           |  98 [32m+++++++++++++++++++[m
+ char_recognize.py                       |  79 [32m+++++++++++++++[m
+ char_segment.py                         | 165 [32m++++++++++++++++++++++++++++++++[m
+ config.py                               |   0
+ generate_train_chars.py                 |  96 [32m+++++++++++++++++++[m
+ images/car2.jpg                         | Bin [31m0[m -> [32m8314[m bytes
+ images/car3.jpg                         | Bin [31m0[m -> [32m9406[m bytes
+ main.py                                 |  32 [32m+++++++[m
+ models/svm_model.pkl                    | Bin [31m0[m -> [32m3248097[m bytes
+ plate_detect.py                         |  87 [32m+++++++++++++++++[m
+ train_chars/0/0_0.png                   | Bin [31m0[m -> [32m107[m bytes
+ train_chars/0/0_1.png                   | Bin [31m0[m -> [32m117[m bytes
+ train_chars/0/0_10.png                  | Bin [31m0[m -> [32m105[m bytes
+ train_chars/0/0_11.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_12.png                  | Bin [31m0[m -> [32m107[m bytes
+ train_chars/0/0_13.png                  | Bin [31m0[m -> [32m122[m bytes
+ train_chars/0/0_14.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_15.png                  | Bin [31m0[m -> [32m116[m bytes
+ train_chars/0/0_16.png                  | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/0_17.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_18.png                  | Bin [31m0[m -> [32m104[m bytes
+ train_chars/0/0_19.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_2.png                   | Bin [31m0[m -> [32m110[m bytes
+ train_chars/0/0_20.png                  | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/0_21.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_22.png                  | Bin [31m0[m -> [32m119[m bytes
+ train_chars/0/0_23.png                  | Bin [31m0[m -> [32m128[m bytes
+ train_chars/0/0_24.png                  | Bin [31m0[m -> [32m118[m bytes
+ train_chars/0/0_25.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_26.png                  | Bin [31m0[m -> [32m119[m bytes
+ train_chars/0/0_27.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_28.png                  | Bin [31m0[m -> [32m115[m bytes
+ train_chars/0/0_29.png                  | Bin [31m0[m -> [32m125[m bytes
+ train_chars/0/0_3.png                   | Bin [31m0[m -> [32m110[m bytes
+ train_chars/0/0_30.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_31.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_32.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_33.png                  | Bin [31m0[m -> [32m114[m bytes
+ train_chars/0/0_34.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_35.png                  | Bin [31m0[m -> [32m118[m bytes
+ train_chars/0/0_36.png                  | Bin [31m0[m -> [32m116[m bytes
+ train_chars/0/0_37.png                  | Bin [31m0[m -> [32m108[m bytes
+ train_chars/0/0_38.png                  | Bin [31m0[m -> [32m116[m bytes
+ train_chars/0/0_39.png                  | Bin [31m0[m -> [32m122[m bytes
+ train_chars/0/0_4.png                   | Bin [31m0[m -> [32m118[m bytes
+ train_chars/0/0_40.png                  | Bin [31m0[m -> [32m115[m bytes
+ train_chars/0/0_41.png                  | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/0_42.png                  | Bin [31m0[m -> [32m110[m bytes
+ train_chars/0/0_43.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_44.png                  | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/0_45.png                  | Bin [31m0[m -> [32m115[m bytes
+ train_chars/0/0_46.png                  | Bin [31m0[m -> [32m126[m bytes
+ train_chars/0/0_47.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_48.png                  | Bin [31m0[m -> [32m110[m bytes
+ train_chars/0/0_49.png                  | Bin [31m0[m -> [32m118[m bytes
+ train_chars/0/0_5.png                   | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_50.png                  | Bin [31m0[m -> [32m122[m bytes
+ train_chars/0/0_51.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_52.png                  | Bin [31m0[m -> [32m104[m bytes
+ train_chars/0/0_53.png                  | Bin [31m0[m -> [32m102[m bytes
+ train_chars/0/0_54.png                  | Bin [31m0[m -> [32m125[m bytes
+ train_chars/0/0_55.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_56.png                  | Bin [31m0[m -> [32m114[m bytes
+ train_chars/0/0_57.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_58.png                  | Bin [31m0[m -> [32m117[m bytes
+ train_chars/0/0_59.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_6.png                   | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_60.png                  | Bin [31m0[m -> [32m115[m bytes
+ train_chars/0/0_61.png                  | Bin [31m0[m -> [32m119[m bytes
+ train_chars/0/0_62.png                  | Bin [31m0[m -> [32m113[m bytes
+ train_chars/0/0_63.png                  | Bin [31m0[m -> [32m117[m bytes
+ train_chars/0/0_64.png                  | Bin [31m0[m -> [32m114[m bytes
+ train_chars/0/0_65.png                  | Bin [31m0[m -> [32m109[m bytes
+ train_chars/0/0_66.png                  | Bin [31m0[m -> [32m116[m bytes
+ train_chars/0/0_67.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_68.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_69.png                  | Bin [31m0[m -> [32m122[m bytes
+ train_chars/0/0_7.png                   | Bin [31m0[m -> [32m101[m bytes
+ train_chars/0/0_70.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_71.png                  | Bin [31m0[m -> [32m117[m bytes
+ train_chars/0/0_72.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_73.png                  | Bin [31m0[m -> [32m111[m bytes
+ train_chars/0/0_74.png                  | Bin [31m0[m -> [32m114[m bytes
+ train_chars/0/0_75.png                  | Bin [31m0[m -> [32m120[m bytes
+ train_chars/0/0_76.png                  | Bin [31m0[m -> [32m110[m bytes
+ train_chars/0/0_77.png                  | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/0_78.png                  | Bin [31m0[m -> [32m122[m bytes
+ train_chars/0/0_79.png                  | Bin [31m0[m -> [32m115[m bytes
+ train_chars/0/0_8.png                   | Bin [31m0[m -> [32m114[m bytes
+ train_chars/0/0_9.png                   | Bin [31m0[m -> [32m112[m bytes
+ train_chars/0/real_car2_0_35343_0.png   | Bin [31m0[m -> [32m148[m bytes
+ train_chars/0/real_car2_0_35343_1.png   | Bin [31m0[m -> [32m147[m bytes
+ train_chars/0/real_car2_0_35343_10.png  | Bin [31m0[m -> [32m150[m bytes
+ train_chars/0/real_car2_0_35343_100.png | Bin [31m0[m -> [32m147[m bytes
+ train_chars/0/real_car2_0_35343_101.png | Bin [31m0[m -> [32m151[m bytes
+ train_chars/0/real_car2_0_35343_102.png | Bin [31m0[m -> [32m147[m bytes
+ train_chars/0/real_car2_0_35343_103.png | Bin [31m0[m -> [32m148[m bytes
+ train_chars/0/real_car2_0_35343_104.png | Bin [31m0[m -> [32m150[m bytes
+ train_chars/0/real_car2_0_35343_105.png | Bin [31m0[m -> [32m150[m bytes
+ train_chars/0/real_car2_0_35343_106.png | Bin [31m0[m -> [32m147[m bytes
+ train_chars/0/real_car2_0_35343_107.png | Bin [31m0[m -> [32m151[m bytes
+ train_chars/0/real_car2_0_35343_108.png | Bin [31m0[m -> [32m148[m bytes
+ train_chars/0/real_car2_0_35343_109.png | Bin [31m0[m -> [32m148[m bytes
+ train_chars/0/real_car2_0_35343_11.png  | Bin [31m0[m -> [32m151[
